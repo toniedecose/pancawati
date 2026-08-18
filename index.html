@@ -35,9 +35,9 @@
             <a href="#home" class="text-xl md:text-2xl font-bold tracking-widest text-forest font-serif">PINEVIEW VILLAS</a>
             <div class="hidden lg:flex space-x-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
                 <a href="#about" class="hover:text-gold transition">Kawasan</a>
+                <a href="#gallery" class="hover:text-gold transition">Galeri</a>
                 <a href="#villa" class="hover:text-gold transition">Villa A</a>
                 <a href="#masterplan" class="hover:text-gold transition">Masterplan</a>
-                <a href="#location" class="hover:text-gold transition">Lokasi</a>
                 <a href="#faq" class="hover:text-gold transition">FAQ</a>
             </div>
             <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Pineview%20Villas%20Pancawati.%20Mohon%20informasi%20tipe%20villa,%20harga,%20dan%20ketersediaan%20unit." target="_blank" class="bg-forest text-white px-5 py-2.5 text-xs font-semibold tracking-wider uppercase rounded hover:bg-gold transition shadow-sm">
@@ -46,10 +46,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Berdasarkan slide banner utama / cover) -->
+    <!-- Hero Section -->
     <header id="home" class="relative h-screen flex items-center justify-center text-center text-white">
         <div class="absolute inset-0 bg-black/50 z-10"></div>
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/hero-pineview.jpg');"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('images/villa-day.png');"></div>
         
         <div class="relative z-20 px-6 max-w-4xl mx-auto mt-16">
             <div class="inline-block bg-gold/90 text-white text-[11px] font-semibold tracking-widest uppercase px-3 py-1 rounded mb-4">
@@ -67,7 +67,7 @@
         </div>
     </header>
 
-    <!-- Spesifikasi Utama Bar (Berdasarkan data masterplan resmi) -->
+    <!-- Spesifikasi Utama Bar -->
     <section class="bg-forest text-white py-10 px-6 border-t border-gold/25">
         <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div class="border-r border-white/10 last:border-none">
@@ -90,9 +90,9 @@
     </section>
 
     <!-- 5 Keunggulan Utama Kawasan -->
-    <section class="py-24 px-6 max-w-7xl mx-auto">
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
-            <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">PINEVIEW VILLAS PANCALWATI</span>
+            <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">PINEVIEW VILLAS PANCAWATI</span>
             <h2 class="text-3xl md:text-4xl font-bold text-forest font-serif">Keunggulan Kawasan</h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -124,29 +124,45 @@
         </div>
     </section>
 
-    <!-- Visual Suasana & Galeri -->
-    <section class="bg-warmbeige py-20 px-6 border-y border-stone-300/40">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">EKSKLUSIF & HARMONIS</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-forest mb-6 font-serif">Kawasan Hunian Harmonis dengan Alam</h2>
-                <p class="text-stone-600 text-sm leading-relaxed font-light mb-6">
-                    Menghadirkan suasana tenang, sejuk, dan asri untuk kehidupan yang berkualitas. Dilengkapi dengan fasilitas kolam renang pribadi di dalam rumah serta lanskap hijau pinus yang memukau.
-                </p>
-                <div class="space-y-3 text-xs font-semibold text-forest uppercase tracking-wider">
-                    <div class="flex items-center gap-2">✓ Desain Arsitektur Modern Tropis</div>
-                    <div class="flex items-center gap-2">✓ Pencahayaan & Lanskap Malam yang Eksklusif</div>
-                    <div class="flex items-center gap-2">✓ Tata Letak Unit Tertata Rapi</div>
+    <!-- Galeri Interior & Eksterior -->
+    <section id="gallery" class="py-24 px-6 bg-warmbeige border-y border-stone-300/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">GALERI VISUAL</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-forest font-serif">Kemewahan di Setiap Sudut Ruangan</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
+                    <img src="images/interior-living.png" alt="Interior Living Room" class="rounded object-cover h-52 w-full mb-3">
+                    <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Living Room</h3>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
+                    <img src="images/interior-dining.png" alt="Interior Dining Room" class="rounded object-cover h-52 w-full mb-3">
+                    <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Dining Area</h3>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
+                    <img src="images/interior-bedroom.png" alt="Interior Bedroom" class="rounded object-cover h-52 w-full mb-3">
+                    <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Master Bedroom</h3>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
+                    <img src="images/interior-pool.png" alt="Kolam Renang Pribadi" class="rounded object-cover h-52 w-full mb-3">
+                    <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Kolam Renang Pribadi</h3>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <img src="images/suasana-siang.jpg" alt="Suasana Siang Hari Pineview Villas" class="rounded-lg shadow-md object-cover h-64 w-full">
-                <img src="images/suasana-malam.jpg" alt="Suasana Malam Hari Pineview Villas" class="rounded-lg shadow-md object-cover h-64 w-full mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
+                    <img src="images/villa-day.png" alt="Suasana Siang Hari" class="rounded object-cover h-64 w-full mb-3">
+                    <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Kawasan Siang Hari</h3>
+                </div>
+                <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
+                    <img src="images/villa-night.png" alt="Suasana Malam Hari" class="rounded object-cover h-64 w-full mb-3">
+                    <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Kawasan Malam Hari</h3>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Tipe Villa A (Berdasarkan detail floor plan dokumen) -->
+    <!-- Tipe Villa A -->
     <section id="villa" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">SIGNATURE UNIT</span>
@@ -174,58 +190,42 @@
                 </div>
             </div>
             <div class="bg-stone-100 flex flex-col items-center justify-center p-8 border-l border-stone-200">
-                <img src="images/villa-a-floorplan.jpg" alt="Villa A Floor Plan" class="rounded shadow object-contain max-h-[420px] w-full mb-4 bg-white p-2">
+                <img src="images/villa-a-floorplan.png" alt="Villa A Floor Plan" class="rounded shadow object-contain max-h-[420px] w-full mb-4 bg-white p-2">
                 <span class="text-xs text-stone-500 font-medium">Denah Resmi Floor Plan Villa A (78,5 / 98,1 m²)</span>
             </div>
         </div>
     </section>
 
-    <!-- Masterplan Section -->
+    <!-- Masterplan & Site Plan Section -->
     <section id="masterplan" class="py-24 px-6 bg-forest text-white">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">SITE PLAN KAWASAN</span>
-                <h2 class="text-3xl md:text-4xl font-bold mb-6 font-serif">Masterplan Pancawati Pine Villa</h2>
-                <p class="text-stone-300 text-sm leading-relaxed font-light mb-8">
-                    Dirancang eksklusif dengan total 42 unit di atas lahan seluas ± 2,3 Ha. Memiliki tata letak jalan lingkungan yang luas (ROW 6 meter) serta zona hijau dan area parkir tamu yang memadai.
-                </p>
-                <div class="grid grid-cols-2 gap-4 text-xs font-medium text-stone-200 mb-8">
-                    <div class="bg-white/5 p-3 rounded border border-white/10">📍 A. Area Villa</div>
-                    <div class="bg-white/5 p-3 rounded border border-white/10">🛣️ B. Jalan Lingkungan (6m)</div>
-                    <div class="bg-white/5 p-3 rounded border border-white/10">🌲 C. Kawasan Hijau</div>
-                    <div class="bg-white/5 p-3 rounded border border-white/10">🚗 D. Parkir Tamu</div>
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">SITE PLAN & MASTERPLAN</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-serif">Tata Letak Kawasan Pineview Villas</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center">
+                    <img src="images/masterplan.png" alt="Masterplan" class="rounded mb-4 object-cover h-48 w-full">
+                    <h3 class="font-bold text-gold mb-2 font-serif text-lg">Masterplan Kawasan</h3>
+                    <p class="text-xs text-stone-300 font-light">Visualisasi tata ruang keseluruhan seluas ± 2,3 Ha di tengah hutan pinus.</p>
                 </div>
-                <a href="https://wa.me/6281234567890?text=Halo,%20mohon%20kirimkan%20masterplan%20lengkap%20Pineview%20Villas." target="_blank" class="inline-block bg-gold text-forest px-7 py-3.5 rounded text-xs font-semibold tracking-widest uppercase hover:bg-white transition">
-                    Minta Masterplan PDF
-                </a>
+                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center">
+                    <img src="images/site-plan.png" alt="Site Plan" class="rounded mb-4 object-cover h-48 w-full">
+                    <h3 class="font-bold text-gold mb-2 font-serif text-lg">Site Plan Unit</h3>
+                    <p class="text-xs text-stone-300 font-light">Pemetaan posisi kavling dari total 42 unit eksklusif.</p>
+                </div>
+                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center">
+                    <img src="images/site-plan-table.png" alt="Site Plan Table" class="rounded mb-4 object-cover h-48 w-full">
+                    <h3 class="font-bold text-gold mb-2 font-serif text-lg">Tabel Blok & Luas Kavling</h3>
+                    <p class="text-xs text-stone-300 font-light">Rincian ukuran, nomor kavling, dan ketersediaan unit.</p>
+                </div>
             </div>
-            <div>
-                <img src="images/masterplan.jpg" alt="Masterplan Pancawati Pine Villa" class="rounded-lg shadow-2xl border border-white/20 w-full object-cover">
-            </div>
-        </div>
-    </section>
 
-    <!-- Lokasi & Akses Strategis -->
-    <section id="location" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">LOKASI STRATEGIS</span>
-                <h2 class="text-3xl md:text-4xl font-bold text-forest mb-4 font-serif">Desa Pancawati, Bogor</h2>
-                <p class="text-stone-600 mb-6 font-light text-sm leading-relaxed">
-                    Terletak di kawasan pegunungan Pancawati yang asri dengan akses cepat menuju berbagai titik penting dan destinasi rekreasi.
-                </p>
-                <div class="space-y-3 text-sm text-stone-700 mb-8 bg-warmbeige p-6 rounded-lg border border-stone-300/60">
-                    <div class="flex items-center gap-3">📍 <span class="font-medium">10 Menit ke Puncak</span></div>
-                    <div class="flex items-center gap-3">📍 <span class="font-medium">15 Menit ke Ciawi</span></div>
-                    <div class="flex items-center gap-3">📍 <span class="font-medium">20 Menit ke Tol Jagorawi</span></div>
-                    <div class="flex items-center gap-3">📍 <span class="font-medium">Dekat dengan Fasilitas Umum, Sekolah, & Pusat Kuliner</span></div>
-                </div>
-                <a href="https://wa.me/6281234567890?text=Halo,%20mohon%20info%20sharelock%20lokasi%20Pineview%20Villas." target="_blank" class="inline-block border border-forest text-forest px-7 py-3.5 rounded text-xs font-semibold tracking-widest uppercase hover:bg-forest hover:text-white transition">
-                    Dapatkan Sharelock Lokasi
+            <div class="text-center">
+                <a href="https://wa.me/6281234567890?text=Halo,%20mohon%20kirimkan%20masterplan%20dan%20siteplan%20lengkap%20Pineview%20Villas." target="_blank" class="inline-block bg-gold text-forest px-8 py-4 rounded text-xs font-semibold tracking-widest uppercase hover:bg-white transition shadow-lg">
+                    Minta Brosur & Site Plan Lengkap (PDF)
                 </a>
-            </div>
-            <div class="bg-stone-200 h-96 rounded-lg flex flex-col items-center justify-center shadow-inner border border-stone-300 p-4 text-center">
-                <img src="images/lokasi-peta.jpg" alt="Peta Lokasi Pineview Villas" class="rounded h-full w-full object-cover shadow">
             </div>
         </div>
     </section>
