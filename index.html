@@ -35,6 +35,7 @@
             <a href="#home" class="text-xl md:text-2xl font-bold tracking-widest text-forest font-serif">PINEVIEW VILLAS</a>
             <div class="hidden lg:flex space-x-8 text-xs font-semibold tracking-widest uppercase text-stone-700">
                 <a href="#about" class="hover:text-gold transition">Kawasan</a>
+                <a href="#location" class="hover:text-gold transition">Lokasi</a>
                 <a href="#gallery" class="hover:text-gold transition">Galeri</a>
                 <a href="#villa" class="hover:text-gold transition">Villa A</a>
                 <a href="#masterplan" class="hover:text-gold transition">Masterplan</a>
@@ -124,6 +125,51 @@
         </div>
     </section>
 
+    <!-- Keunggulan Lokasi & Peta Akses (Baru) -->
+    <section id="location" class="py-24 px-6 bg-forest text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">STRATEGIC LOCATION</span>
+                <h2 class="text-3xl md:text-4xl font-bold font-serif">Keunggulan & Peta Lokasi</h2>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-white/5 p-8 rounded-xl border border-white/10">
+                    <h3 class="text-2xl font-bold text-gold mb-6 font-serif">KEUNGGULAN LOKASI</h3>
+                    <ul class="space-y-4 text-stone-200 text-sm md:text-base">
+                        <li class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-gold rounded-full"></span>
+                            <span><strong>10 Menit</strong> ke Puncak</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-gold rounded-full"></span>
+                            <span><strong>15 Menit</strong> ke Ciawi</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-gold rounded-full"></span>
+                            <span><strong>20 Menit</strong> ke Tol Jagorawi</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <span class="w-2 h-2 bg-gold rounded-full"></span>
+                            <span>Dekat dengan Fasilitas Umum, Sekolah, & Pusat Kuliner</span>
+                        </li>
+                    </ul>
+                    <div class="mt-8">
+                        <p class="text-xs text-stone-300 italic">* Klik pada peta lokasi di samping untuk memperbesar tampilan.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-white/5 p-3 rounded-xl border border-white/10 cursor-pointer group relative overflow-hidden" onclick="openModal('images/lokasi.jpg', 'Peta Lokasi Pineview Villas')">
+                        <img src="images/lokasi.jpg" alt="Peta Lokasi Pineview Villas" class="rounded-lg object-cover max-h-[380px] w-full transition duration-300 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs tracking-widest uppercase font-semibold">
+                            🔍 Klik untuk Zoom Peta
+                        </div>
+                    </div>
+                    <span class="text-xs text-stone-400 mt-3">Peta Akses Menuju Pineview Villas Desa Pancawati</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Galeri Interior & Eksterior -->
     <section id="gallery" class="py-24 px-6 bg-warmbeige border-y border-stone-300/40">
         <div class="max-w-7xl mx-auto">
@@ -133,29 +179,29 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
-                    <img src="images/interior-living.jpg" alt="Interior Living Room" class="rounded object-cover h-52 w-full mb-3">
+                    <img src="images/interior-living.jpg" alt="Interior Living Room" class="rounded object-cover h-52 w-full mb-3 cursor-pointer hover:opacity-90 transition" onclick="openModal('images/interior-living.jpg', 'Living Room')">
                     <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Living Room</h3>
                 </div>
                 <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
-                    <img src="images/interior-dining.jpg" alt="Interior Dining Room" class="rounded object-cover h-52 w-full mb-3">
+                    <img src="images/interior-dining.jpg" alt="Interior Dining Room" class="rounded object-cover h-52 w-full mb-3 cursor-pointer hover:opacity-90 transition" onclick="openModal('images/interior-dining.jpg', 'Dining Area')">
                     <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Dining Area</h3>
                 </div>
                 <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
-                    <img src="images/interior-bedroom.jpg" alt="Interior Bedroom" class="rounded object-cover h-52 w-full mb-3">
+                    <img src="images/interior-bedroom.jpg" alt="Interior Bedroom" class="rounded object-cover h-52 w-full mb-3 cursor-pointer hover:opacity-90 transition" onclick="openModal('images/interior-bedroom.jpg', 'Master Bedroom')">
                     <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Master Bedroom</h3>
                 </div>
                 <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
-                    <img src="images/interior-pool.jpg" alt="Kolam Renang Pribadi" class="rounded object-cover h-52 w-full mb-3">
+                    <img src="images/interior-pool.jpg" alt="Kolam Renang Pribadi" class="rounded object-cover h-52 w-full mb-3 cursor-pointer hover:opacity-90 transition" onclick="openModal('images/interior-pool.jpg', 'Kolam Renang Pribadi')">
                     <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Kolam Renang Pribadi</h3>
                 </div>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                 <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
-                    <img src="images/villa-day.jpg" alt="Suasana Siang Hari" class="rounded object-cover h-64 w-full mb-3">
+                    <img src="images/villa-day.jpg" alt="Suasana Siang Hari" class="rounded object-cover h-64 w-full mb-3 cursor-pointer hover:opacity-90 transition" onclick="openModal('images/villa-day.jpg', 'Kawasan Siang Hari')">
                     <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Kawasan Siang Hari</h3>
                 </div>
                 <div class="bg-white p-3 rounded-lg shadow-sm border border-stone-200">
-                    <img src="images/villa-night.jpg" alt="Suasana Malam Hari" class="rounded object-cover h-64 w-full mb-3">
+                    <img src="images/villa-night.jpg" alt="Suasana Malam Hari" class="rounded object-cover h-64 w-full mb-3 cursor-pointer hover:opacity-90 transition" onclick="openModal('images/villa-night.jpg', 'Kawasan Malam Hari')">
                     <h3 class="font-bold text-forest text-xs uppercase tracking-wider text-center">Kawasan Malam Hari</h3>
                 </div>
             </div>
@@ -190,33 +236,54 @@
                 </div>
             </div>
             <div class="bg-stone-100 flex flex-col items-center justify-center p-8 border-l border-stone-200">
-                <img src="images/villa-a-floorplan.jpg" alt="Villa A Floor Plan" class="rounded shadow object-contain max-h-[420px] w-full mb-4 bg-white p-2">
-                <span class="text-xs text-stone-500 font-medium">Denah Resmi Floor Plan Villa A (78,5 / 98,1 m²)</span>
+                <img src="images/villa-a-floorplan.jpg" alt="Villa A Floor Plan" class="rounded shadow object-contain max-h-[420px] w-full mb-4 bg-white p-2 cursor-pointer hover:opacity-90 transition" onclick="openModal('images/villa-a-floorplan.jpg', 'Denah Floor Plan Villa A')">
+                <span class="text-xs text-stone-500 font-medium">Denah Resmi Floor Plan Villa A (Klik untuk Zoom)</span>
             </div>
         </div>
     </section>
 
-    <!-- Masterplan & Site Plan Section -->
+    <!-- Masterplan & Site Plan Section (Zoomable) -->
     <section id="masterplan" class="py-24 px-6 bg-forest text-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <span class="text-gold tracking-[0.2em] text-xs uppercase font-semibold block mb-3">SITE PLAN & MASTERPLAN</span>
                 <h2 class="text-3xl md:text-4xl font-bold font-serif">Tata Letak Kawasan Pineview Villas</h2>
+                <p class="text-stone-300 text-sm mt-2">Klik pada masing-masing gambar untuk memperbesar (Zoom View)</p>
             </div>
             
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
-                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center">
-                    <img src="images/masterplan.jpg" alt="Masterplan" class="rounded mb-4 object-cover h-48 w-full">
+                <!-- Masterplan -->
+                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center group cursor-pointer hover:border-gold transition" onclick="openModal('images/masterplan.jpg', 'Masterplan Kawasan')">
+                    <div class="relative overflow-hidden rounded mb-4 w-full h-48 bg-black/20">
+                        <img src="images/masterplan.jpg" alt="Masterplan" class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs tracking-widest uppercase font-semibold">
+                            🔍 Zoom Gambar
+                        </div>
+                    </div>
                     <h3 class="font-bold text-gold mb-2 font-serif text-lg">Masterplan Kawasan</h3>
                     <p class="text-xs text-stone-300 font-light">Visualisasi tata ruang keseluruhan seluas ± 2,3 Ha di tengah hutan pinus.</p>
                 </div>
-                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center">
-                    <img src="images/site-plan.jpg" alt="Site Plan" class="rounded mb-4 object-cover h-48 w-full">
+
+                <!-- Site Plan -->
+                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center group cursor-pointer hover:border-gold transition" onclick="openModal('images/site-plan.jpg', 'Site Plan Unit')">
+                    <div class="relative overflow-hidden rounded mb-4 w-full h-48 bg-black/20">
+                        <img src="images/site-plan.jpg" alt="Site Plan" class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs tracking-widest uppercase font-semibold">
+                            🔍 Zoom Gambar
+                        </div>
+                    </div>
                     <h3 class="font-bold text-gold mb-2 font-serif text-lg">Site Plan Unit</h3>
                     <p class="text-xs text-stone-300 font-light">Pemetaan posisi kavling dari total 42 unit eksklusif.</p>
                 </div>
-                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center">
-                    <img src="images/site-plan-table.jpg" alt="Site Plan Table" class="rounded mb-4 object-cover h-48 w-full">
+
+                <!-- Site Plan Table -->
+                <div class="bg-white/5 p-6 rounded-lg border border-white/10 flex flex-col items-center text-center group cursor-pointer hover:border-gold transition" onclick="openModal('images/site-plan-table.jpg', 'Tabel Blok & Luas Kavling')">
+                    <div class="relative overflow-hidden rounded mb-4 w-full h-48 bg-black/20">
+                        <img src="images/site-plan-table.jpg" alt="Site Plan Table" class="object-cover h-full w-full group-hover:scale-105 transition duration-300">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white text-xs tracking-widest uppercase font-semibold">
+                            🔍 Zoom Gambar
+                        </div>
+                    </div>
                     <h3 class="font-bold text-gold mb-2 font-serif text-lg">Tabel Blok & Luas Kavling</h3>
                     <p class="text-xs text-stone-300 font-light">Rincian ukuran, nomor kavling, dan ketersediaan unit.</p>
                 </div>
@@ -239,9 +306,9 @@
         <div class="space-y-4">
             <details class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 group">
                 <summary class="font-semibold text-forest cursor-pointer flex justify-between items-center font-serif text-lg">
-                    Di mana lokasi Pineview Villas?
+                    Di mana lokasi Pineview Villas dan apa keunggulannya?
                 </summary>
-                <p class="mt-4 text-sm text-stone-600 font-light leading-relaxed">Berlokasi di Desa Pancawati, Kabupaten Bogor, Jawa Barat, di kawasan hutan pinus yang sejuk.</p>
+                <p class="mt-4 text-sm text-stone-600 font-light leading-relaxed">Berlokasi di Desa Pancawati, Kabupaten Bogor. Memiliki keunggulan strategis: 10 menit ke Puncak, 15 menit ke Ciawi, 20 menit ke Tol Jagorawi, serta dekat dengan fasilitas umum, sekolah, dan pusat kuliner.</p>
             </details>
             <details class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 group">
                 <summary class="font-semibold text-forest cursor-pointer flex justify-between items-center font-serif text-lg">
@@ -282,6 +349,44 @@
     <a href="https://wa.me/6282290007890?text=Halo,%20saya%20tertarik%20dengan%20Pineview%20Villas%20Pancawati.%20Mohon%20informasi%20harga%20dan%20ketersediaan%20unit." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
     </a>
+
+    <!-- Modal Lightbox / Zoom Interaktif -->
+    <div id="imageModal" class="fixed inset-0 z-50 bg-black/90 hidden flex-col items-center justify-center p-4">
+        <button onclick="closeModal()" class="absolute top-6 right-6 text-white text-3xl font-bold hover:text-gold transition">&times;</button>
+        <p id="modalTitle" class="text-gold text-sm md:text-base tracking-widest uppercase mb-4 font-serif text-center"></p>
+        <div class="max-w-5xl max-h-[80vh] overflow-auto relative">
+            <img id="modalImage" src="" alt="Zoomed Image" class="rounded shadow-2xl object-contain w-full max-h-[75vh]">
+        </div>
+        <p class="text-stone-400 text-xs mt-4">Tekan tombol [X] atau klik di luar gambar untuk menutup</p>
+    </div>
+
+    <!-- Script untuk Modal Zoom -->
+    <script>
+        function openModal(imageSrc, titleText) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            
+            modal.style.display = 'flex';
+            modalImg.src = imageSrc;
+            modalTitle.innerText = titleText;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Tutup modal jika klik di area luar gambar
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
 
 </body>
 </html>
