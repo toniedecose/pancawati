@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villa Pancawati | Villa Premium di Hutan Pinus Pancawati, Bogor</title>
-    <meta name="description" content="Villa premium di Desa Pancawati, Bogor, dengan suasana hutan pinus, private pool, desain modern, dan lingkungan eksklusif. Temukan hunian impian Anda sekarang.">
+    <meta name="description" content="Villa premium di Desa Pancawati, Bogor, dengan suasana hutan pinus, private pool, desain modern, dan lingkungan eksklusif.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -14,52 +14,233 @@
                         forest: '#2d4739',
                         ivory: '#faf8f5',
                         gold: '#c5a059',
-                        charcoal: '#333333'
+                        charcoal: '#333333',
+                        warmbeige: '#f3efe6'
                     }
                 }
             }
         }
     </script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
     </style>
 </head>
-<body class="bg-ivory text-charcoal">
+<body class="bg-ivory text-charcoal antialiased selection:bg-gold selection:text-white">
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-50 bg-ivory/90 backdrop-blur-sm border-b border-gray-200">
+    <nav class="fixed w-full z-50 bg-ivory/90 backdrop-blur-md border-b border-gray-200 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-forest">VILLA PANCAWATI</div>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#home" class="hover:text-gold transition">Home</a>
+            <a href="#home" class="text-xl md:text-2xl font-bold tracking-wider text-forest">VILLA PANCAWATI</a>
+            <div class="hidden lg:flex space-x-8 text-sm font-medium tracking-wide">
+                <a href="#about" class="hover:text-gold transition">The Escape</a>
                 <a href="#villa" class="hover:text-gold transition">The Villa</a>
                 <a href="#masterplan" class="hover:text-gold transition">Masterplan</a>
-                <a href="#gallery" class="hover:text-gold transition">Gallery</a>
+                <a href="#location" class="hover:text-gold transition">Location</a>
+                <a href="#faq" class="hover:text-gold transition">FAQ</a>
             </div>
-            <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Villa Pancawati. Mohon informasi tipe villa, harga, dan ketersediaan unit." class="bg-forest text-white px-6 py-2 rounded hover:bg-gold transition">Konsultasi</a>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Villa%20Pancawati.%20Mohon%20informasi%20tipe%20villa,%20harga,%20dan%20ketersediaan%20unit." target="_blank" class="bg-forest text-white px-5 py-2.5 text-sm font-medium rounded hover:bg-gold transition shadow-sm">
+                Konsultasi
+            </a>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center text-center text-white">
-        <div class="absolute inset-0 bg-black/40"></div>
-        <!-- Placeholder Image: Replace with villa-hero.jpg -->
+        <div class="absolute inset-0 bg-black/50 z-10"></div>
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');"></div>
         
-        <div class="relative z-10 px-6">
-            <h1 class="text-5xl md:text-7xl mb-6">VILLA PANCAWATI</h1>
-            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto font-light">Hidup Lebih Tenang, Lebih Dekat dengan Alam</p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#villa" class="bg-white text-forest px-8 py-4 rounded font-semibold hover:bg-gold hover:text-white transition">LIHAT UNIT VILLA</a>
-                <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Villa Pancawati." class="border border-white text-white px-8 py-4 rounded font-semibold hover:bg-white hover:text-forest transition">KONSULTASI VIA WHATSAPP</a>
+        <div class="relative z-20 px-6 max-w-4xl mx-auto mt-16">
+            <span class="text-gold tracking-[0.25em] text-xs md:text-sm uppercase font-semibold mb-4 block">Premium Villa in the Pine Forest</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl mb-6 font-bold leading-tight">Hidup Lebih Tenang, Lebih Dekat dengan Alam</h1>
+            <p class="text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light text-gray-200">
+                Villa premium di kawasan hutan pinus Pancawati, Bogor — menghadirkan ruang privat untuk menikmati ketenangan, udara sejuk, dan suasana alam.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#villa" class="bg-white text-forest px-8 py-4 rounded text-sm font-semibold tracking-wider hover:bg-gold hover:text-white transition shadow-lg">LIHAT UNIT VILLA</a>
+                <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Villa%20Pancawati." target="_blank" class="border border-white/80 text-white px-8 py-4 rounded text-sm font-semibold tracking-wider hover:bg-white hover:text-forest transition">KONSULTASI VIA WHATSAPP</a>
             </div>
         </div>
     </section>
 
+    <!-- Quick Value Proposition -->
+    <section class="bg-forest text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="border-r border-white/10 last:border-none">
+                <h3 class="text-3xl md:text-4xl font-bold text-gold mb-1">± 2,3 Ha</h3>
+                <p class="text-xs md:text-sm uppercase tracking-wider text-gray-300">Kawasan Pengembangan[cite: 1]</p>
+            </div>
+            <div class="border-r border-white/10 last:border-none">
+                <h3 class="text-3xl md:text-4xl font-bold text-gold mb-1">42 Unit</h3>
+                <p class="text-xs md:text-sm uppercase tracking-wider text-gray-300">Villa Eksklusif[cite: 1]</p>
+            </div>
+            <div class="border-r border-white/10 last:border-none">
+                <h3 class="text-3xl md:text-4xl font-bold text-gold mb-1">6 Meter</h3>
+                <p class="text-xs md:text-sm uppercase tracking-wider text-gray-300">ROW Jalan Utama[cite: 1]</p>
+            </div>
+            <div>
+                <h3 class="text-3xl md:text-4xl font-bold text-gold mb-1">Private Pool</h3>
+                <p class="text-xs md:text-sm uppercase tracking-wider text-gray-300">Di Setiap Unit Villa[cite: 1]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Storytelling: A Place to Escape -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="text-gold tracking-widest text-xs uppercase font-semibold block mb-3">THE EXPERIENCE</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-forest mb-6 leading-tight">Bukan Sekadar Villa.<br>Sebuah Ruang untuk Pulang.</h2>
+            <p class="text-gray-600 mb-6 leading-relaxed font-light">
+                Villa Pancawati dirancang khusus untuk menghadirkan pengalaman tinggal yang lebih tenang, privat, dan selaras dengan alam pegunungan. Dikelilingi oleh rindangnya hutan pinus, tempat ini menjadi pelarian sempurna dari hiruk-pikuk perkotaan.
+            </p>
+            <ul class="space-y-3 text-sm font-medium text-forest mb-8">
+                <li class="flex items-center gap-2">✓ Udara sejuk pegunungan yang menyegarkan[cite: 1]</li>
+                <li class="flex items-center gap-2">✓ Suasana alami yang tenang dan asri[cite: 1]</li>
+                <li class="flex items-center gap-2">✓ Desain tropis modern dengan kolam renang pribadi[cite: 1]</li>
+            </ul>
+            <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20tahu%20lebih%20lanjut%20tentang%20Villa%20Pancawati." target="_blank" class="inline-block bg-forest text-white px-6 py-3 rounded text-sm font-medium hover:bg-gold transition">
+                Jadwalkan Kunjungan
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Villa Exterior" class="rounded shadow-md object-cover h-64 w-full">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Villa Interior" class="rounded shadow-md object-cover h-64 w-full mt-8">
+        </div>
+    </section>
+
+    <!-- Why Villa Pancawati -->
+    <section class="bg-warmbeige py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center mb-16">
+            <span class="text-gold tracking-widest text-xs uppercase font-semibold block mb-3">EXCELLENCE</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-forest">Mengapa Memilih Villa Pancawati?</h2>
+        </div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-forest mb-3">Kawasan Hutan Pinus</h3>
+                <p class="text-gray-600 text-sm font-light">Lingkungan eksklusif yang harmonis dengan alam hutan pinus Pancawati yang asri[cite: 1].</p>
+            </div>
+            <div class="bg-white p-8 rounded shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-forest mb-3">Udara Sejuk & Sehat</h3>
+                <p class="text-gray-600 text-sm font-light">Suasana pegunungan dengan kualitas udara yang lebih bersih, sejuk, dan menenangkan[cite: 1].</p>
+            </div>
+            <div class="bg-white p-8 rounded shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-forest mb-3">One Gate System</h3>
+                <p class="text-gray-600 text-sm font-light">Sistem keamanan satu pintu yang menjamin privasi, kenyamanan, serta keamanan maksimal[cite: 1].</p>
+            </div>
+            <div class="bg-white p-8 rounded shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-forest mb-3">Lingkungan Asri & Nyaman</h3>
+                <p class="text-gray-600 text-sm font-light">Kawasan yang ditata secara khusus untuk mendukung gaya hidup berkualitas bersama keluarga[cite: 1].</p>
+            </div>
+            <div class="bg-white p-8 rounded shadow-sm border border-gray-100 md:col-span-2 flex flex-col justify-center bg-forest text-white">
+                <h3 class="text-xl font-bold text-gold mb-2">Investasi Menjanjikan</h3>
+                <p class="text-gray-200 text-sm font-light">Aset properti bernilai tinggi di kawasan berkembang Bogor, ideal untuk second home maupun private retreat[cite: 1].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Villa Type Section -->
+    <section id="villa" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-gold tracking-widest text-xs uppercase font-semibold block mb-3">OUR SIGNATURE UNIT</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-forest">Tipe Villa A</h2>
+            <p class="text-gray-600 mt-2 font-light">Kombinasi kemewahan arsitektur modern tropis dengan fungsionalitas ruang.</p>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md border border-gray-200 overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+            <div class="p-8 md:p-12 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold text-forest mb-6">Spesifikasi Unit Villa A</h3>
+                    <ul class="space-y-4 text-sm text-gray-700 mb-8 border-b border-gray-100 pb-6">
+                        <li class="flex justify-between py-2 border-b border-gray-50"><span class="text-gray-500">Kamar Tidur</span> <span class="font-semibold">2 Bedrooms[cite: 1]</span></li>
+                        <li class="flex justify-between py-2 border-b border-gray-50"><span class="text-gray-500">Kamar Mandi</span> <span class="font-semibold">2 Bathrooms[cite: 1]</span></li>
+                        <li class="flex justify-between py-2 border-b border-gray-50"><span class="text-gray-500">Carport</span> <span class="font-semibold">1 Carport[cite: 1]</span></li>
+                        <li class="flex justify-between py-2 border-b border-gray-50"><span class="text-gray-500">Fasilitas Khusus</span> <span class="font-semibold text-forest">Private Pool[cite: 1]</span></li>
+                        <li class="flex justify-between py-2 border-b border-gray-50"><span class="text-gray-500">Luas Bangunan</span> <span class="font-semibold">78,5 m²[cite: 1]</span></li>
+                        <li class="flex justify-between py-2"><span class="text-gray-500">Luas Tanah</span> <span class="font-semibold">98,1 m²[cite: 1]</span></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20ketersediaan%20Villa%20A." target="_blank" class="bg-forest text-white text-center py-3 px-6 rounded text-sm font-semibold hover:bg-gold transition">
+                        Tanyakan Ketersediaan Unit
+                    </a>
+                </div>
+            </div>
+            <div class="bg-gray-100 flex items-center justify-center p-6">
+                <!-- Placeholder for Floor Plan image -->
+                <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Floor Plan Villa A" class="rounded shadow object-cover max-h-[400px] w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="py-24 px-6 bg-warmbeige">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-gold tracking-widest text-xs uppercase font-semibold block mb-3">STRATEGIC LOCATION</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-forest mb-4">Pancawati, Bogor</h2>
+                <p class="text-gray-600 mb-6 font-light">
+                    Terletak di Desa Pancawati, Kabupaten Bogor, Jawa Barat[cite: 1]. Kawasan yang terkenal dengan keindahan alam pegunungan dan kemudahan aksesibilitas.
+                </p>
+                <div class="space-y-3 text-sm text-gray-700 mb-8">
+                    <div class="flex items-center gap-3">📍 <span class="font-medium">10 Menit ke Puncak*[cite: 1]</span></div>
+                    <div class="flex items-center gap-3">📍 <span class="font-medium">15 Menit ke Ciawi*[cite: 1]</span></div>
+                    <div class="flex items-center gap-3">📍 <span class="font-medium">20 Menit ke Tol Jagorawi*[cite: 1]</span></div>
+                    <p class="text-xs text-gray-400 mt-2">*Estimasi berdasarkan materi marketing yang tersedia.</p>
+                </div>
+                <a href="https://wa.me/6281234567890?text=Halo,%20mohon%20kirimkan%20link%20Google%20Maps%20Villa%20Pancawati." target="_blank" class="inline-block border border-forest text-forest px-6 py-3 rounded text-sm font-semibold hover:bg-forest hover:text-white transition">
+                    Lihat Lokasi di Google Maps
+                </a>
+            </div>
+            <div class="bg-gray-200 h-80 rounded-lg flex items-center justify-center shadow-inner">
+                <span class="text-gray-500 font-medium">[ Google Maps Embed Placeholder ]</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-gold tracking-widest text-xs uppercase font-semibold block mb-3">COMMON QUESTIONS</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-forest">Pertanyaan Populer</h2>
+        </div>
+        <div class="space-y-4">
+            <details class="bg-white p-6 rounded shadow-sm border border-gray-200 group">
+                <summary class="font-semibold text-forest cursor-pointer flex justify-between items-center">
+                    Di mana lokasi Villa Pancawati?
+                </summary>
+                <p class="mt-4 text-sm text-gray-600 font-light">Villa Pancawati berlokasi di Desa Pancawati, Kabupaten Bogor, Jawa Barat[cite: 1].</p>
+            </details>
+            <details class="bg-white p-6 rounded shadow-sm border border-gray-200 group">
+                <summary class="font-semibold text-forest cursor-pointer flex justify-between items-center">
+                    Berapa luas kawasan dan jumlah unit?
+                </summary>
+                <p class="mt-4 text-sm text-gray-600 font-light">Total luas lahan pengembangan adalah ± 2,3 Ha dengan total 42 unit villa eksklusif[cite: 1].</p>
+            </details>
+            <details class="bg-white p-6 rounded shadow-sm border border-gray-200 group">
+                <summary class="font-semibold text-forest cursor-pointer flex justify-between items-center">
+                    Bagaimana cara mendapatkan informasi harga dan ketersediaan unit?
+                </summary>
+                <p class="mt-4 text-sm text-gray-600 font-light">Silakan hubungi tim marketing melalui tombol WhatsApp untuk informasi terbaru mengenai harga dan ketersediaan unit.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-forest text-white py-12 px-6 border-t border-white/10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+                <h3 class="text-xl font-bold tracking-wider mb-1">VILLA PANCAWATI</h3>
+                <p class="text-xs text-gray-300 font-light">Desa Pancawati, Kabupaten Bogor, Jawa Barat[cite: 1]</p>
+            </div>
+            <div class="text-xs text-gray-400">
+                &copy; 2026 Villa Pancawati. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/6281234567890?text=Halo, saya tertarik dengan Villa Pancawati." class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20tertarik%20dengan%20Villa%20Pancawati." target="_blank" class="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition flex items-center justify-center">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
     </a>
 
